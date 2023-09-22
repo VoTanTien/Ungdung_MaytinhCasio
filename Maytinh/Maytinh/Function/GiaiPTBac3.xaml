@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#BFE8FF"
+             Padding="10"
+             Title="Giải phương trình bậc ba"
+             x:Class="Maytinh.Function.GiaiPTBac3">
+    <ContentPage.Content>
+        <Grid x:Name="giaiPTBacBa" RowSpacing="1" ColumnSpacing="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="giaiPT" 
+                   Text="Giải phương trình ax³ + bx² + cx + d = 0"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="3"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="18"
+                   />
+            <Label x:Name="nhapA" 
+                   Text="Nhập a = "
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="18"
+                   />
+            <Editor x:Name="txtA" 
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="20"
+                    />
+            <Label x:Name="nhapB" 
+                   Text="Nhập b = "
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="18"
+                   />
+            <Editor x:Name="txtB" 
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="20"
+                    />
+            <Label x:Name="nhapC" 
+                   Text="Nhập c = "
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="18"
+                   />
+            <Editor x:Name="txtC" 
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="20"
+                    />
+            <Label x:Name="nhapD" 
+                   Text="Nhập d = "
+                   Grid.Row="5"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="18"
+                   />
+            <Editor x:Name="txtD" 
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="20"
+                    />
+            <Button x:Name="btnLamMoi" 
+                    Text="RESET"
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    TextColor="White"
+                    BackgroundColor="#3F75FF"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    CornerRadius="10"
+                     Clicked="BtnLamMoi_Clicked"
+                    />
+            <Button x:Name="btnTinh" 
+                    Text="Tính"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    TextColor="White"
+                    BackgroundColor="#3F75FF"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    CornerRadius="10"
+                   Clicked="BtnTinh_Clicked"
+                    />
+            <Button x:Name="btnThoat" 
+                    Text="Thoát"
+                    Grid.Row="7"
+                    Grid.Column="2"
+                     TextColor="White"
+                    BackgroundColor="#3F75FF"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    CornerRadius="10"
+                     Clicked="BtnThoat_Clicked"
+                    />
+            <Label x:Name="lbKetQua1" 
+                    Text=""
+                   Grid.Row="9"
+                   Grid.ColumnSpan="3"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   BackgroundColor="#5FA2FF"
+                   FontSize="18"
+                   />
+            <Label x:Name="lbKetQua2" 
+                    Text=""
+                   Grid.Row="10"
+                   Grid.ColumnSpan="3"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   BackgroundColor="#5FA2FF"
+                   FontSize="18"
+                   />
+            <Label x:Name="lbKetQua3" 
+                    Text=""
+                   Grid.Row="11"
+                   Grid.ColumnSpan="3"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   BackgroundColor="#5FA2FF"
+                   FontSize="18"
+                   />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

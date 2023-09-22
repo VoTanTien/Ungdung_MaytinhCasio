@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#BFE8FF"
+             Padding="10"
+             Title="Giải hệ phương trình 3 ẩn"
+             x:Class="Maytinh.Function.GiaiHPT3An">
+    <ContentPage.Content>
+        <Grid x:Name="giaiHPT" RowSpacing="1" ColumnSpacing="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lbGiaiHePT3An" 
+                   Text="Giải hệ phương trình bậc nhất, 3 ẩn dạng "
+                   Grid.Row="0"
+                   Grid.ColumnSpan="8"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="18"
+                   />
+            <Label x:Name="dangpt" 
+                   Text="ax + by + cz = d"
+                   Grid.Row="1"
+                   Grid.ColumnSpan="8"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Label x:Name="lbNhapA1" 
+                   Text="a1 = "
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Editor x:Name="txtNhapA1" 
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="14"
+                    />
+            <Label x:Name="lbNhapB1" 
+                   Text="b1 = "
+                   Grid.Row="2"
+                   Grid.Column="2"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Editor x:Name="txtNhapB1" 
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="14"
+                    />
+            <Label x:Name="lbNhapC1" 
+                   Text="c1 = "
+                   Grid.Row="2"
+                   Grid.Column="4"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Editor x:Name="txtNhapC1" 
+                    Grid.Row="2"
+                    Grid.Column="5"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="14"
+                    />
+            <Label x:Name="lbNhapD1" 
+                   Text="d1 = "
+                   Grid.Row="2"
+                   Grid.Column="6"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Editor x:Name="txtNhapD1" 
+                    Grid.Row="2"
+                    Grid.Column="7"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="14"
+                    />
+            <Label x:Name="lbNhapA2" 
+                   Text="a2 = "
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Editor x:Name="txtNhapA2" 
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="14"
+                    />
+            <Label x:Name="lbNhapB2" 
+                   Text="b2 = "
+                   Grid.Row="3"
+                   Grid.Column="2"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Editor x:Name="txtNhapB2" 
+                    Grid.Row="3"
+                    Grid.Column="3"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="14"
+                    />
+            <Label x:Name="lbNhapC2" 
+                   Text="c2 = "
+                   Grid.Row="3"
+                   Grid.Column="4"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Editor x:Name="txtNhapC2" 
+                    Grid.Row="3"
+                    Grid.Column="5"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="14"
+                    />
+            <Label x:Name="lbNhapD2" 
+                   Text="d2 = "
+                   Grid.Row="3"
+                   Grid.Column="6"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Editor x:Name="txtNhapD2" 
+                    Grid.Row="3"
+                    Grid.Column="7"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="14"
+                    />
+            <Label x:Name="lbNhapA3" 
+                   Text="a3 = "
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Editor x:Name="txtNhapA3" 
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="14"
+                    />
+            <Label x:Name="lbNhapB3" 
+                   Text="b3 = "
+                   Grid.Row="4"
+                   Grid.Column="2"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Editor x:Name="txtNhapB3" 
+                    Grid.Row="4"
+                    Grid.Column="3"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="14"
+                    />
+            <Label x:Name="lbNhapC3" 
+                   Text="c3 = "
+                   Grid.Row="4"
+                   Grid.Column="4"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Editor x:Name="txtNhapC3" 
+                    Grid.Row="4"
+                    Grid.Column="5"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="14"
+                    />
+            <Label x:Name="lbNhapD3" 
+                   Text="d3 = "
+                   Grid.Row="4"
+                   Grid.Column="6"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="14"
+                   />
+            <Editor x:Name="txtNhapD3" 
+                    Grid.Row="4"
+                    Grid.Column="7"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="14"
+                    />
+            <Button x:Name="btnLamMoi"
+                    Text="RESET"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                     TextColor="White"
+                    BackgroundColor="#3F75FF"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="18"
+                    CornerRadius="10"
+                    Clicked="BtnLamMoi_Clicked"
+                    />
+            <Button x:Name="btnTinh"
+                    Text="Tính"
+                    Grid.Row="6"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="4"
+                     TextColor="White"
+                    BackgroundColor="#3F75FF"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="18"
+                    CornerRadius="10"
+                    Clicked="BtnTinh_Clicked"
+                    />
+            <Button x:Name="btnThoat"
+                    Text="Thoát"
+                    Grid.Row="6"
+                    Grid.Column="6"
+                    Grid.ColumnSpan="2"
+                     TextColor="White"
+                    BackgroundColor="#3F75FF"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="18"
+                    CornerRadius="10"
+                    Clicked="BtnThoat_Clicked"
+                    />
+            <Label x:Name="lbKetQuaX"
+                   Grid.Row="8"
+                   Grid.ColumnSpan="8"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   BackgroundColor="#5FA2FF"
+                   FontSize="18"
+                   />
+            <Label x:Name="lbKetQuaY"
+                   Grid.Row="9"
+                   Grid.ColumnSpan="8"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   BackgroundColor="#5FA2FF"
+                   FontSize="18"
+                   />
+            <Label x:Name="lbKetQuaZ"
+                   Grid.Row="10"
+                   Grid.ColumnSpan="8"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   BackgroundColor="#5FA2FF"
+                   FontSize="18"
+                   />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

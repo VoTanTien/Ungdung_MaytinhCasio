@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#BFE8FF"
+             x:Class="Maytinh.Function.KiemTraSNT"
+             Title="Kiểm tra số nguyên tố">
+    <ContentPage.Content>
+        <Grid x:Name="kiemtraSNT" RowSpacing="1" ColumnSpacing="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="giaiPT" 
+                   Text="Kiểm tra số nguyên tố"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="3"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="18"
+                   />
+            <Label x:Name="nhapA" 
+                   Text="Nhập a = "
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="18"
+                   />
+            <Editor x:Name="txtA" 
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="20"
+                    />
+
+            <Button x:Name="btnLamMoi" 
+                    Text="RESET"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                     TextColor="White"
+                    BackgroundColor="#3F75FF"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    CornerRadius="10"
+                    Clicked="BtnLamMoi_Clicked"
+                    />
+            <Button x:Name="btnTinh" 
+                    Text="Kiểm tra"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                     TextColor="White"
+                    BackgroundColor="#3F75FF"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    CornerRadius="10"
+                    Clicked="BtnTinh_Clicked"
+                    />
+            <Button x:Name="btnThoat" 
+                    Text="Thoát"
+                    Grid.Row="5"
+                    Grid.Column="2"
+                     TextColor="White"
+                    BackgroundColor="#3F75FF"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    CornerRadius="10"
+                     Clicked="BtnThoat_Clicked"
+                    />
+            <Label x:Name="lbKetQua" 
+                    Text=""
+                   Grid.Row="7"
+                   Grid.ColumnSpan="3"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   BackgroundColor="#5FA2FF"
+                   FontSize="18"
+                   />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

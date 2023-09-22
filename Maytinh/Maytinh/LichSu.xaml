@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="LightCyan"
+             x:Class="Maytinh.LichSu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lbChucNang" 
+               Text="Lịch Sử"
+               FontSize="30" 
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               BackgroundColor="#3F75FF"
+               TextColor="white"
+               FontAttributes="Bold"
+               />
+            <ListView x:Name="ProductsView"
+ 
+                ItemsSource="{Binding Path=Products}"
+ 
+                ListView.RowHeight="150"  >
+
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <ViewCell>
+
+                            <StackLayout Orientation="Vertical">
+
+                                <Entry Text="{Binding Id}"
+                                       IsReadOnly="True" />
+                                <Entry Text="{Binding Loaitinhtoan}"
+                                       IsReadOnly="True"/>
+                                <Entry Text="{Binding Ketqua}" 
+                                       IsReadOnly="True"/>
+
+                            </StackLayout>
+
+                        </ViewCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+            <Grid  RowSpacing="1" ColumnSpacing="1" Padding="10" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="⌂ Home "
+                    TextColor="White"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    FontSize="14"
+                    FontAttributes="Bold"
+                    BackgroundColor="SlateBlue"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="Center"
+                    CornerRadius="60"
+                        BorderWidth="2"
+                        BorderColor="White"
+                    Clicked="BtnHome_clicked"
+                    />
+                <Button Text=" Xóa "
+                    TextColor="White"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    BackgroundColor="SlateBlue"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="Center"
+                    CornerRadius="60"
+                         BorderWidth="2"
+                        BorderColor="White"
+                    Clicked="BtnXoa_clicked"
+                    />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

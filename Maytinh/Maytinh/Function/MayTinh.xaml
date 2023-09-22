@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#94CAFF"
+             x:Class="Maytinh.Function.MayTinh">
+    <ContentPage.Content>
+        <Grid x:Name="mainGrid" RowSpacing="5" ColumnSpacing="10" Padding="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+            <Label x:Name="lbBieuThuc"
+                   Text="0" 
+                   Grid.Row="0" 
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   FontSize="25"
+                   TextColor="White"
+                   Grid.ColumnSpan="5"
+                   />
+
+            <Label x:Name="lbKetQua"
+                   Text="0" 
+                   Grid.Row="1" 
+                   HorizontalTextAlignment="End"
+                   VerticalTextAlignment="Center"
+                   FontSize="30"
+                   TextColor="Black"
+                   Grid.ColumnSpan="5"
+                   />
+
+            <Button x:Name="btnHome"
+                    Text="⌂ Home" 
+                    TextColor="White"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    BackgroundColor="SlateBlue"
+                    BorderColor="White"
+                    BorderWidth="2"
+                    FontSize="14"
+                    CornerRadius="10"
+                    Clicked="BtnHome_clicked"
+                    />
+
+
+            <Grid x:Name="radianOn" Grid.Row="2" Grid.Column="0" BackgroundColor="SlateBlue" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Switch x:Name="rdRadian" IsToggled="True" HorizontalOptions="Center" VerticalOptions="Center"    Grid.Row="0" />
+                <Label Text="Radian" TextColor="White" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+            </Grid>
+            <Button x:Name="btnSin"
+                    Text="Sin(x)" 
+                    TextColor="White"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    BackgroundColor="SlateBlue"
+                    BorderWidth="1"
+                    FontSize="12"
+                        CornerRadius="12"
+                    Clicked="btnSin_Clicked"
+                    />
+            <Button x:Name="btnCos"
+                    Text="Cos(x)" 
+                    TextColor="White"
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    BackgroundColor="SlateBlue"
+                    BorderWidth="1"
+                    FontSize="12"
+                        CornerRadius="12"
+                   Clicked="btnCos_Clicked"
+                    />
+            <Button x:Name="btnTan"
+                    Text="Tan(x)" 
+                    TextColor="White"
+                    Grid.Row="2"
+                    Grid.Column="4"
+                    BackgroundColor="SlateBlue"
+                    BorderWidth="1"
+                    FontSize="12"
+                        CornerRadius="12"
+                    Clicked="btnTan_Clicked"
+                    />
+
+            <Button x:Name="btnLog"
+                    Text="Log(x)" 
+                    TextColor="White"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    BackgroundColor="SlateBlue"
+                    BorderWidth="1"
+                    FontSize="14"
+                        CornerRadius="12"
+                    Clicked="btnLog_Clicked"
+                    />
+            <Button x:Name="btnLn"
+                    Text="Ln(x)" 
+                    TextColor="White"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    BackgroundColor="SlateBlue"
+                    BorderWidth="1"
+                    FontSize="14"
+                    CornerRadius="12"
+                    Clicked="btnLn_Clicked"
+                    />
+
+            <Button x:Name="btnMoNgoac"
+                    Text="("
+                    TextColor="White"
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    BackgroundColor="SlateBlue"
+                    BorderWidth="1"
+                        CornerRadius="12"
+                    Clicked="btnMoNgoac_Clicked"
+                    />
+            <Button x:Name="btnDongNgoac"
+                    Text=")"
+                    TextColor="White"
+                    Grid.Row="3"
+                    Grid.Column="3"
+                    BackgroundColor="SlateBlue"
+                    BorderWidth="1"
+                    CornerRadius="12"
+                    Clicked="btnDongNgoac_Clicked"
+                    />
+            <Button x:Name="btnArc"
+                    Text="Arc(x)" 
+                    TextColor="White"
+                    Grid.Row="3"
+                    Grid.Column="4"
+                    BackgroundColor="SlateBlue"
+                    BorderWidth="1"
+                    FontSize="14"
+                        CornerRadius="12"
+                    Clicked="BtnArc_Clicked"
+                    />
+            <Button x:Name="btnMu"
+                    Text="a^(x)"
+                    TextColor="White"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    BackgroundColor="#3F75FF"
+                    
+                    BorderWidth="1"
+                    FontSize="16"
+                    CornerRadius="12"
+                    Clicked="btnMu_Clicked"
+                    />
+
+            <Button x:Name="btnAns"
+                    Text="Ans"
+                    TextColor="White"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    BackgroundColor="LightSlateGray"
+                    BorderWidth="1"
+                    FontSize="20"
+                        CornerRadius="12"
+                    Clicked="btnAns_Clicked"
+                    />
+
+            <Button x:Name="btnAC"
+                    Text="AC" 
+                    TextColor="White"
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    BackgroundColor="LightSlateGray"
+                    BorderWidth="1"
+                    FontSize="20"
+                        CornerRadius="12"
+                   Clicked="btnAC_Clicked"
+                    />
+
+            <Button x:Name="btnDelete"
+                    Text="⌫" 
+                    TextColor="White"
+                    Grid.Row="4"
+                    Grid.Column="3"
+                    BackgroundColor="LightSlateGray"
+                    BorderWidth="1"
+                    FontSize="26"
+                        CornerRadius="12"
+                    Clicked="btnDelete_Clicked"
+                    />
+
+            <Button x:Name="btnChia"
+                    Text="÷"
+                    TextColor="White"
+                    Grid.Row="4"
+                    Grid.Column="4"
+                    BackgroundColor="#3F75FF"
+                   
+                    BorderWidth="1"
+                      FontSize="26"                 
+                    CornerRadius="12"
+                    Clicked="btnChia_Clicked"
+                    />
+
+            <Button x:Name="btnGiaiThua"
+                    Text="!"
+                    TextColor="White"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    BackgroundColor="#3F75FF"
+                    BorderWidth="1"
+                      FontSize="20"
+                    CornerRadius="12"
+                    Clicked="btnGiaiThua_Clicked"
+                    />
+            <Button x:Name="btnBay"
+                    Text="7"
+                    TextColor="RoyalBlue"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    BackgroundColor="LightCyan"
+                    BorderWidth="1"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                   Clicked="btnBay_Clicked"
+                    />
+            <Button x:Name="btnTam"
+                    Text="8"
+                    TextColor="RoyalBlue"
+                    Grid.Row="5"
+                    Grid.Column="2"
+                    BackgroundColor="LightCyan"
+                    
+                    BorderWidth="1"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                   Clicked="btnTam_Clicked"
+                    />
+            <Button x:Name="btnChin"
+                    Text="9"
+                    TextColor="RoyalBlue"
+                    Grid.Row="5"
+                    Grid.Column="3"
+                    BackgroundColor="LightCyan"
+                    
+                    BorderWidth="1"
+                     FontSize="24"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                   Clicked="btnChin_Clicked"
+                    />
+            <Button x:Name="btnNhan"
+                    Text="×"
+                    TextColor="White"
+                    Grid.Row="5"
+                    Grid.Column="4"
+                    BackgroundColor="#3F75FF"
+                   
+                    BorderWidth="1"
+                      FontSize="26"
+                    CornerRadius="12"
+                    Clicked="btnNhan_Clicked"
+                    />
+
+            <Button x:Name="btnCanBacBa"
+                    Text="³√"
+                    TextColor="White"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    BackgroundColor="#3F75FF"
+                    
+                    BorderWidth="1"
+                      FontSize="20"
+                    CornerRadius="12"
+                    Clicked="btnCanBacBa_Clicked"
+                    />
+            <Button x:Name="btnBon"
+                    Text="4"
+                    TextColor="RoyalBlue"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    BackgroundColor="LightCyan"
+                    
+                    BorderWidth="1"
+                     FontSize="24"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                   Clicked="btnBon_Clicked"
+                    />
+            <Button x:Name="btnNam"
+                    Text="5"
+                    TextColor="RoyalBlue"
+                    Grid.Row="6"
+                    Grid.Column="2"
+                    BackgroundColor="LightCyan"
+                    
+                    BorderWidth="1"
+                     FontSize="24"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    Clicked="btnNam_Clicked"
+                    />
+            <Button x:Name="btnSau"
+                    Text="6"
+                    TextColor="RoyalBlue"
+                    Grid.Row="6"
+                    Grid.Column="3"
+                    BackgroundColor="LightCyan"
+                    
+                    BorderWidth="1"
+                     FontSize="24"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    Clicked="btnSau_Clicked"
+                    />
+            <Button x:Name="btnTru"
+                    Text="−"
+                    TextColor="White"
+                    Grid.Row="6"
+                    Grid.Column="4"
+                    BackgroundColor="#3F75FF"
+                    
+                    BorderWidth="1"
+                      FontSize="26"
+                    CornerRadius="12"
+                    Clicked="btnTru_Clicked"
+                    />
+
+            <Button x:Name="btnCanBacHai"
+                    Text="√"
+                    TextColor="White"
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    BackgroundColor="#3F75FF"
+                   
+                    BorderWidth="1"
+                      FontSize="20"
+                    CornerRadius="12"
+                    Clicked="btnCanBacHai_Clicked"
+                    />
+            <Button x:Name="btnMot"
+                    Text="1"
+                    TextColor="RoyalBlue"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    BackgroundColor="LightCyan"
+                    
+                    BorderWidth="1"
+                     FontSize="24"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    Clicked="btnMot_Clicked"
+                    />
+            <Button x:Name="btnHai"
+                    Text="2"
+                    TextColor="RoyalBlue"
+                    Grid.Row="7"
+                    Grid.Column="2"
+                    BackgroundColor="LightCyan"
+                    
+                    BorderWidth="1"
+                     FontSize="24"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    Clicked="btnHai_Clicked"
+                    />
+            <Button x:Name="btnBa"
+                    Text="3"
+                    TextColor="RoyalBlue"
+                    Grid.Row="7"
+                    Grid.Column="3"
+                    BackgroundColor="LightCyan"
+                    BorderColor="White"
+                    BorderWidth="1"
+                     FontSize="24"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    Clicked="btnBa_Clicked"
+                    />
+            <Button x:Name="btnCong"
+                    Text="+"
+                    TextColor="White"
+                    Grid.Row="7"
+                    Grid.Column="4"
+                    BackgroundColor="#3F75FF"
+                   
+                    BorderWidth="1"
+                      FontSize="26"
+                    CornerRadius="12"
+                    Clicked="btnCong_Clicked"
+                    />
+
+
+            <Button x:Name="btnE"
+                    Text="e"
+                    TextColor="White"
+                    Grid.Row="8"
+                    Grid.Column="0"
+                    BackgroundColor="#3F75FF"
+                   
+                    BorderWidth="1"
+                      FontSize="20"
+                    CornerRadius="12"
+                    Clicked="btnE_Clicked"
+                    />
+            <Button x:Name="btnPI"
+                    Text="π"
+                    TextColor="White"
+                    Grid.Row="8"
+                    Grid.Column="1"
+                    BackgroundColor="#3F75FF"
+                    
+                    BorderWidth="1"
+                      FontSize="20"
+                    CornerRadius="12"
+                    Clicked="btnPI_Clicked"
+                    />
+            <Button x:Name="btnKhong"
+                    Text="0"
+                    TextColor="RoyalBlue"
+                    Grid.Row="8"
+                    Grid.Column="2"
+                    BackgroundColor="LightCyan"
+                    
+                    BorderWidth="1"
+                     FontSize="24"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    Clicked="btnKhong_Clicked"
+                    />
+            <Button x:Name="btnPhay"
+                    Text="."
+                    TextColor="White"
+                    Grid.Row="8"
+                    Grid.Column="3"
+                    BackgroundColor="#3F75FF"
+                    
+                    BorderWidth="1"
+                      FontSize="30"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    Clicked="btnPhay_Clicked"
+                    />
+            <Button x:Name="btnBang"
+                    Text="="
+                    TextColor="White"
+                    Grid.Row="8"
+                    Grid.Column="4"
+                    BackgroundColor="#3F75FF"
+                    BorderWidth="1"
+                     FontSize="30"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    Clicked="btnBang_Clicked"
+                    />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

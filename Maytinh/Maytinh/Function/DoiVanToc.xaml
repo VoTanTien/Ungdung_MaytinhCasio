@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              BackgroundColor="LightCyan"
+             x:Class="Maytinh.Function.DoiVanToc">
+    <ContentPage.Content>
+        <Grid x:Name="Doidonvi" RowSpacing="10" ColumnSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="giaiPT" 
+                   Text="Đổi Vận tốc"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="3"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="25"
+                   BackgroundColor="#3F75FF"
+                   
+                   />
+
+
+            <Label x:Name="NhapA" 
+                   Text="Nhập số:"
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="18"
+                   />
+            <Entry x:Name="txtA" 
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Focused="onUnit1Focused"
+                    TextChanged="onText1Changed"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Grid.ColumnSpan="2"
+                    VerticalOptions="End"
+                    TextColor="Black"
+                    FontSize="20"
+                   
+                    />
+            <Label x:Name="ChonA" 
+                   Text="Chọn đơn vị:"
+                   Grid.Row="2"
+                   Grid.Column="0"
+
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="18"
+                   />
+            <Picker x:Name="PFunc" 
+                    Grid.Row="3"
+                    Focused="onUnit1Focused"
+                    SelectedIndexChanged="onUnit1Changed"
+                    HorizontalTextAlignment="Start"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="20"
+                    >
+                <Picker.Items>
+                    <x:String>m/s</x:String>
+                    <x:String>km/h</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label x:Name="NhapB" 
+                   Text="Nhập số:"
+                   Grid.Row="4"
+                   Grid.Column="1"
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="18"
+                   />
+
+            <Entry x:Name="txtB" 
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Focused="onUnit2Focused"
+                    TextChanged="onText2Changed"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Grid.ColumnSpan="2"
+                    VerticalOptions="End"
+                    TextColor="Black"
+                    FontSize="20"
+                    />
+            <Label x:Name="ChonB" 
+                   Text="Chọn đơn vị:"
+                   Grid.Row="4"
+                   Grid.Column="0"
+
+                   VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="18"
+                   />
+
+            <Picker x:Name="P2Func" 
+                    Grid.Row="5"
+                    Focused="onUnit2Focused"
+                    SelectedIndexChanged="onUnit2Changed"
+                    HorizontalTextAlignment="Start"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="20"
+                    >
+                <Picker.Items>
+                    <x:String>m/s</x:String>
+                    <x:String>km/h</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button x:Name="btnThoat"
+                    Clicked="BtnThoat_Clicked"
+                    Text="Thoát"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    TextColor="White"
+                    BackgroundColor="#3F75FF"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20"
+                    CornerRadius="15"
+             />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
